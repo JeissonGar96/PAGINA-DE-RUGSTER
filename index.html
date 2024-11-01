@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUGSTER - Alfombras Personalizadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de RUGSTER">
+            </div>
+
+            <!-- Menú de Navegación Desktop -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="menu">
+                        <a href="#">Diseños</a>
+                        <ul class="submenu">
+                            <li><a href="#keyboard-rugs">Keyboard Rugs</a></li>
+                            <li><a href="#medium-rugs">Medium Rugs</a></li>
+                            <li><a href="#large-rugs">Large Rugs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Carrito de Compras en Desktop -->
+            <div class="desktop-cart">
+                <img src="img/carrito.png" alt="Carrito de Compras">
+                <span class="cart-text">Ver Carrito</span>
+            </div>
+
+            <!-- Menú Hamburguesa para Mobile -->
+            <div class="hamburger-menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </div>
+        </header>
+
+        <!-- Menú de Navegación Mobile -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#keyboard-rugs">Keyboard Rugs</a></li>
+                <li><a href="#medium-rugs">Medium Rugs</a></li>
+                <li><a href="#large-rugs">Large Rugs</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <!-- Carrito de Compras dentro del Menú Mobile -->
+            <div class="mobile-cart">
+                <img src="img/carrito.png" alt="Carrito de Compras">
+                <span class="cart-text">Ver Carrito</span>
+            </div>
+        </nav>
+
+        <!-- Sección de Bienvenida -->
+        <section class="hero">
+            <h1>RUGSTER</h1>
+            <p>Tu Diseño, Tu Estilo...</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+        </section>
+
+        <!-- Sección de Alfombras por Categoría -->
+        <section id="keyboard-rugs" class="categoria">
+            <h2>Keyboard Rugs</h2>
+            <div class="productos">
+                <div class="producto categoria-imagen" style="background-image: url('keyboard-rug1.jpg');"></div>
+                <div class="producto categoria-imagen" style="background-image: url('keyboard-rug2.jpg');"></div>
+                <div class="producto categoria-imagen" style="background-image: url('keyboard-rug3.jpg');"></div>
+            </div>
+            <button class="ver-mas">Ver más</button>
+        </section>
+
+        <section id="medium-rugs" class="categoria">
+            <h2>Medium Rugs</h2>
+            <div class="productos">
+                <div class="producto categoria-imagen" style="background-image: url('medium-rug1.jpg');"></div>
+                <div class="producto categoria-imagen" style="background-image: url('medium-rug2.jpg');"></div>
+                <div class="producto categoria-imagen" style="background-image: url('medium-rug3.jpg');"></div>
+            </div>
+            <button class="ver-mas">Ver más</button>
+        </section>
+
+        <section id="large-rugs" class="categoria">
+            <h2>Large Rugs</h2>
+            <div class="productos">
+                <div class="producto categoria-imagen" style="background-image: url('large-rug1.jpg');"></div>
+                <div class="producto categoria-imagen" style="background-image: url('large-rug2.jpg');"></div>
+                <div class="producto categoria-imagen" style="background-image: url('large-rug3.jpg');"></div>
+            </div>
+            <button class="ver-mas">Ver más</button>
+        </section>
+
+        <!-- Modal para ver más fotos de productos -->
+        <div id="productModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Imagen del Producto">
+        </div>
+
+        <!-- Pie de Página -->
+        <footer>
+            <p>&copy; 2024 RUGSTER - Alfombras Personalizadas</p>
+            <nav>
+                <a href="#">Política de Privacidad</a> | <a href="#contacto">Contacto</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
